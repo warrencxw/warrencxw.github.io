@@ -15,6 +15,8 @@ window.onload = function () {
     var body = document.getElementsByTagName("body")[0];
     var toggle = document.getElementById("light-toggle");
     var icon = toggle.getElementsByTagName("i")[0];
+    var rabbit = document.getElementsByClassName("rabbit")[0];
+    var rabbitdark = document.getElementsByClassName("rabbit-dark")[0];
 
     toggle.addEventListener("click", function() {
         if (body.classList.contains("dark")) {
@@ -22,12 +24,16 @@ window.onload = function () {
             toggle.classList.remove("dark");
             icon.classList.add("fa-moon");
             icon.classList.remove("fa-sun");
+            rabbit.classList.remove("dark");
+            rabbitdark.style.opacity = 0;
         }
         else {
             body.classList.add("dark");
             toggle.classList.add("dark");
             icon.classList.add("fa-sun");
             icon.classList.remove("fa-moon");
+            rabbit.classList.add("dark");
+            rabbitdark.style.opacity = 1;
         }
     })
 }

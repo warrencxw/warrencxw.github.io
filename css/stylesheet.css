@@ -45,19 +45,10 @@ a {
     min-height: 100vh;
 }
 
- .centre {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-} 
-
 .wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Vertical alignment for row*/
+    align-items: center; /* Vertical alignment for row */
     justify-content: center; /* Horizontal alignment for row, in between objects in row */
     box-sizing: border-box;
     padding: 40px;
@@ -80,7 +71,7 @@ a {
 .rabbit img {
     height: 290px;
     margin-left: -60px;
-    position:absolute;
+    position: absolute;
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
@@ -228,5 +219,31 @@ a {
 @media (max-width: 576px) {
     .content {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .typewriter h1 {
+        height: 30px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .rabbit {
+        width: 200px;
+        height: 262px;
+    }
+
+    .rabbit img {
+        height: 241px;
+        margin-left: -50px;
+    }
+
+    .wrapper { 
+        padding: 25px; 
     }
 }
